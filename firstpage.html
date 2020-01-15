@@ -11,12 +11,25 @@
   'screen_name' : 'First Page'
 });
   
+  function handleOutboundLinkClicks() {
+  ga('send', 'event', {
+    eventCategory: 'Outbound Link',
+    eventAction: 'click',
+    eventLabel: 'Button 1',
+    transport: 'beacon'
+  });
+}
+  
 </script>
 <head>
 This is the first page.
-  20200115 - 1215
+  </br>
+  2020011 - 14:46
 <p>
 <button type="button">Click Me!</button>
   </p>
+  
+  <button onclick="handleOutboundLinkClicks()">Click me</button>
+  
 <body>
 </body>
