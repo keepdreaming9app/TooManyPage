@@ -11,7 +11,7 @@
   'screen_name' : 'First Page'
 });
   
-  function handleOutboundLinkClicks() {
+  function handleOutboundLinkClicks(event) {
   ga('send', 'event', {
     eventCategory: 'Outbound Link',
     eventAction: 'click',
@@ -26,7 +26,7 @@ This is the first page.
   </br>
   2020011 - 14:46
 <p>
-  <button onclick="handleOutboundLinkClicks()">Click me</button>
+  <button onclick="handleOutboundLinkClicks(event)">Click me</button>
 </p>
 <body>
 </body>
