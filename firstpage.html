@@ -12,12 +12,11 @@
 });
   
   function handleOutboundLinkClicks(event) {
-  ga('send', 'event', {
-    eventCategory: 'Outbound Link',
-    eventAction: 'click',
-    eventLabel: 'Button 1',
-    transport: 'beacon'
-  });
+  gtag('event', 'Button Click', {
+  'event_label': 'First Page Button',
+  'event_category': 'Open New Page',
+  'non_interaction': False
+});
 }
   
 </script>
