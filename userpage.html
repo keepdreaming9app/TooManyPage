@@ -4,13 +4,13 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
+  gtag('set', {'user_id': 'A12345'});
   gtag('config', 'UA-43140965-4');
   gtag('event', 'screen_view', {
   'app_name': 'AppName',
   'screen_name' : 'User ID Test Page'
 });
-  gtag('set', {'user_id': 'A12345'});
+  
   
   function handleOutboundLinkClicks(event) {
   gtag('event', 'Button Click', {
