@@ -1,0 +1,29 @@
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-43140965-4');
+  gtag('event', 'screen_view', {
+  'app_name': 'AppName',
+  'screen_name' : 'Third Page'
+});
+  
+  function handleOutboundLinkClicks(event) {
+  gtag('event', 'Button Click', {
+  'event_label': 'Third Page Button',
+  'event_category': 'Open New Page',
+  'non_interaction': false
+});
+}
+  
+</script>
+<head>
+This is the third page.
+
+<p>
+  <a href = "goal.html"><button onclick="handleOutboundLinkClicks(this)">Updated to gtag!!</button></a>
+</p>
+<body>
