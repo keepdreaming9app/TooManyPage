@@ -1,0 +1,31 @@
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  
+  gtag('js', new Date());
+  gtag('config', 'UA-43140965-4');
+  
+   gtag('set', {'user_id': 'cus10000'});
+  gtag('config', 'GA_MEASUREMENT_ID', {
+      'user_id': 'cus10000'
+  });
+  
+  gtag('event', 'screen_view', {
+  'app_name': 'AppName',
+  'screen_name' : 'custom.html'
+});
+  
+  gtag('config', 'GA_MEASUREMENT_ID', {
+  'custom_map': {'dimension2': 'customID'}
+});
+// Sends an event that passes 'age' as a parameter.
+gtag('event', 'custom_dimension', {'customID': 'cus10000'});
+
+  
+</script>
+<body>
+
+ID sent out
+</body>
